@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router'
 import MainLayout from './layout/MainLayout'
 import Home from './pages/Home'
-import CountryItem from './pages/countryItem'
+import CountryItem from './pages/CountryItem'
 
 
 const App = () => {
