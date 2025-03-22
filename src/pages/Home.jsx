@@ -50,7 +50,7 @@ const Home = () => {
             <option value="Oceania">Oceania</option>
           </select>
         </div>
-    <ul className="grid grid-cols-4 gap-[75px]">
+    <ul className="grid grid-cols-1 lg:grid-cols-4 gap-[75px]">
       {
         filterByRegion.map((country, ind)=>{
           return(

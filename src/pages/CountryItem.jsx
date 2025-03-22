@@ -22,7 +22,7 @@ const CountryItem = () => {
 
  
   return (
-    <div className="container grid grid-cols-2 py-10 gap-[120px]" >
+    <div className="container grid grid-cols-1 lg:grid-cols-2 py-10 gap-[120px]" >
       <div className="w-full h-full">
         <Link to="/" className='py-2.5 px-8 flex gap-2.5 font-light text-base mb-10'><img src={back} alt="" />Back</Link>
         <img src={countryObj?.flags.png} alt="Something went wrong" className='w-full h-{400px} rounded-lg' />
