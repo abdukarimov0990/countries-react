@@ -21,11 +21,11 @@ const Home = () => {
 
   return (
     <div className='container '>
-      <div className="flex flex-col items-end sm:flex-row sm:justify-between mb-12">
+      <div className="flex flex-col items-start  sm:flex-row sm:justify-between mb-12">
           <div className="relative w-full max-w-[480px] mb-5 sm:mr-10 sm:mb-0">
             <input
             value={searchVal} onChange={(e)=> setSearchval(e.target.value)}
-              className="w-full py-[18px] pl-[74px] rounded-md shadow-input text-sm text-textColor "
+              className="w-full py-[18px] bg-white dark:bg-dark dark:text-white pl-[74px] rounded-md shadow-input text-sm text-black "
               type="search"
               placeholder="Search for a country…"
             />
@@ -38,7 +38,7 @@ const Home = () => {
           <select
            onChange={(e)=>setRegion(e.target.value)}
             defaultValue="DEFAULT"
-            className="px-6 py-5 shadow-input w-52 text-sm text-textColor space-y-2 rounded- bg-white"
+            className="px-6 py-5 shadow-input w-52 text-sm text-textColor space-y-2 rounded-lg dark:bg-dark dark:text-white bg-white"
           >
             <option value="DEFAULT" disabled>
               Filter by region
@@ -54,9 +54,9 @@ const Home = () => {
       {
         filterByRegion.map((country, ind)=>{
           return(
-          <li key={ind} className='bg-white shadow-card'>
+          <li key={ind} className='bg-white rounded-lg dark:bg-dark dark:text-white shadow-card'>
             <Link to={`/item/${country.name.common}`}>
-            <img src={country.flags.png} alt="something went wrong" className='w-full h-40' />
+            <img src={country.flags.png} alt="something went wrong" className='w-full h-40 rounded-t-lg' />
             <div className="p-6">
               <h3 className='text-lg font-bold mb-4'>{country.name.common}</h3>
               <ul className='space-y-2 text-sm'>

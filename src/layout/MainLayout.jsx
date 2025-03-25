@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <div className='w-full min-h-screen flex flex-col'>
   <Header/>
-    <main className='grow bg-[#FAFAFA] py-12'>
+    <main className='grow bg-[#FAFAFA] dark:bg-dark2 py-12'>
         <Outlet/>
     </main>
     </div>
